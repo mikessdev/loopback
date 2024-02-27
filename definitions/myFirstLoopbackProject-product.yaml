@@ -1,0 +1,25 @@
+product: '1.0.0'
+
+info:
+  name: myfirstloopbackproject
+  title: "myFirstLoopbackProject"
+  version: "1.0.0"
+
+apis:
+  'myfirstloopbackproject_100':
+    $ref: myFirstLoopbackProject.yaml
+
+visibility:
+  view:
+    type: public
+  subscribe:
+    type: authenticated
+
+plans:
+  default:
+    title: Default Plan
+    description: Default Plan
+    approval: false
+    rate-limit:
+      value: 100/hour
+      hard-limit: false
